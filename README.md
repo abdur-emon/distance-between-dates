@@ -4,6 +4,7 @@
 
 A modern, production-grade Laravel application that calculates the precise time between any two dates with beautiful visualizations and high-fidelity cyber-aesthetics.
 
+[![Version](https://img.shields.io/badge/version-2.0.0-38bdf8?style=for-the-badge)](CHANGELOG.md)
 [![Laravel 11](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
@@ -136,9 +137,12 @@ npm run dev
 - **Glassmorphism**: `background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(12px);` borders for a futuristic terminal feel.
 
 ## 🔒 Security & Performance
-- **Validation**: Strict server-side validation using Laravel Form Requests.
+- **Validation**: Strict server-side validation via Laravel's validation layer (`$request->validate()`), mirrored by client-side checks for instant feedback.
 - **Exploit Prevention**: Native protection against CSRF, XSS, and SQL Injection.
 - **Asset Optimization**: Vite optimizes chunks, tree-shakes dependencies, and compresses assets for instant loading.
+
+## 📜 Changelog
+See [CHANGELOG.md](CHANGELOG.md) for the full version history. The latest release is **v2.0.0** (rebrand to Age Calculator).
 
 ## 📄 License
 Open source under the MIT License.

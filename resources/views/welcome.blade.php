@@ -72,7 +72,7 @@
             <div
                 class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-mono tracking-widest uppercase mb-8 shadow-[0_0_15px_rgba(56,189,248,0.15)] animate-float-fast">
                 <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-                Age Calculator v1.0
+                Age Calculator v2.0
             </div>
 
             <h1
