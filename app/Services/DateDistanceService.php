@@ -84,7 +84,9 @@ class DateDistanceService
             return 'same';
         }
 
-        return $target->isPast() || $target->isBefore($from) ? 'past' : 'future';
+        // Direction is relative to $from, NOT to "now" — using isPast() here
+        // would misreport direction whenever $from is a custom date.
+        return $target->isBefore($from) ? 'past' : 'future';
     }
 
     /**
@@ -126,7 +128,9 @@ class DateDistanceService
             return 'Today';
         }
 
-        return implode(', ', $parts);
+        $suffix = $direction === 'past' ? ' ago' : ' from now';
+
+        return implode(', ', $parts) . $suffix;
     }
 
     /**

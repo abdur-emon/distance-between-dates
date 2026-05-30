@@ -138,7 +138,9 @@ function formatHumanReadable(
     return 'Today';
   }
 
-  return parts.join(', ');
+  const suffix = direction === 'past' ? ' ago' : ' from now';
+
+  return parts.join(', ') + suffix;
 }
 
 /**
