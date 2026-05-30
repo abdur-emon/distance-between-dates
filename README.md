@@ -13,7 +13,7 @@ A modern, production-grade Laravel application that calculates the precise time 
 
 - **Precise Calculations**: Calculate exactly how many years, months, days, weeks, hours, and seconds exist between two temporal coordinates.
 - **Bidirectional**: Intelligently handles both `PAST_RECORD` (historical) and `FUTURE_PROJECTED` (upcoming) dates.
-- **Deep Linking**: Seamlessly share exact calculations via URL parameters (`?date=...&from=...`).
+- **Deep Linking**: Seamlessly share exact calculations via URL parameters on the calculator route (`/app?date=...&from=...`).
 - **State Persistence**: Remembers your preferences and last inputs using browser storage and cookies.
 - **Accessibility First**: Designed with WCAG AA compliance, full keyboard navigation (`CMD+K` shortcuts), and ARIA-compliant labeling.
 - **SEO Friendly**: Pre-rendered Blade layouts for maximum visibility and indexing by search engines.
@@ -36,7 +36,7 @@ A modern, production-grade Laravel application that calculates the precise time 
 
 **Design:**
 - **Cyber-Glassmorphism**: A sleek, dark-mode aesthetic.
-- **Typography**: Inter & Outfit font families (Google Fonts).
+- **Typography**: Inter & JetBrains Mono font families (Google Fonts).
 - **Branding**: Custom "Digital Hourglass" visuals with animated highlights.
 
 ### Architectural Decisions

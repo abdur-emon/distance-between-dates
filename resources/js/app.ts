@@ -47,6 +47,13 @@ class DateDistanceApp {
   }
 
   private init(): void {
+    // app.ts is loaded on every page (incl. the landing page), but the
+    // calculator form only exists on the /app view. Bail out cleanly when
+    // it's absent so we don't throw on pages without the form.
+    if (!this.form) {
+      return;
+    }
+
     this.setupEventListeners();
   }
 
