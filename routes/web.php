@@ -1,14 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DateDistanceController;
+use App\Http\Controllers\AgeCalculatorController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/app', [DateDistanceController::class, 'index'])
+Route::get('/app', [AgeCalculatorController::class, 'index'])
     ->name('calculator');
 
-Route::post('/calculate', [DateDistanceController::class, 'calculate'])
+Route::post('/calculate', [AgeCalculatorController::class, 'calculate'])
     ->name('calculate');

@@ -1,6 +1,6 @@
 /**
- * Date Distance Utility
- * 
+ * Age Calculator Utility
+ *
  * Client-side date calculations using date-fns v4
  * 
  * Why client-side calculations?
@@ -30,15 +30,15 @@ import {
   addYears,
   addMonths
 } from 'date-fns';
-import type { DateDistanceResult } from '@/types';
+import type { AgeResult } from '@/types';
 
 /**
  * Calculate the distance between two dates
  */
-export function calculateDateDistance(
+export function calculateAge(
   targetDateStr: string,
   fromDateStr?: string
-): DateDistanceResult {
+): AgeResult {
   try {
     // Parse dates
     const targetDate = startOfDay(parseISO(targetDateStr));

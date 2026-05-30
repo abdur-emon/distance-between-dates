@@ -10,10 +10,10 @@
                     Terminal Access
                 </div>
                 <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-3 animate-flicker">
-                    Distance Between Dates
+                    Age Calculator
                 </h1>
                 <p class="text-sky-500/70 font-mono tracking-widest uppercase text-sm">
-                    Calculate exact date distance
+                    Calculate the time between any two dates
                 </p>
             </div>
 

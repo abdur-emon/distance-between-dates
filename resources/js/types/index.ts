@@ -1,4 +1,4 @@
-export interface DateDistanceResult {
+export interface AgeResult {
   years: number;
   months: number;
   days: number;
@@ -13,5 +13,5 @@ export interface DateDistanceResult {
 export interface AppState {
   targetDate: string | null;
   fromDate: string | null;
-  result: DateDistanceResult | null;
+  result: AgeResult | null;
 }

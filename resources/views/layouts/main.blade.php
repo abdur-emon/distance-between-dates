@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Distance Between Dates. Calculate the precise time between any two dates with beautiful visualizations.">
+        content="Age Calculator. Calculate the precise time between any two dates with beautiful visualizations.">
 
-    <title>{{ $title ?? 'Distance Between Dates - Date Distance Calculator' }}</title>
+    <title>{{ $title ?? 'Age Calculator — Calculate the time between any two dates' }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
             </div>
             <div
                 class="text-sm sm:text-base md:text-lg font-black text-white tracking-wider sm:tracking-widest uppercase leading-tight">
-                DBD
+                Age Calculator
             </div>
         </a>
 

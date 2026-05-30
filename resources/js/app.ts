@@ -1,7 +1,7 @@
 import './bootstrap';
-import { calculateDateDistance, isValidDateString } from '@/utils/dateDistance';
+import { calculateAge, isValidDateString } from '@/utils/ageCalculator';
 import { getInitialState, saveState, clearState } from '@/utils/state';
-import type { AppState, DateDistanceResult } from '@/types';
+import type { AppState, AgeResult } from '@/types';
 
 declare global {
   interface Window {
@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-class DateDistanceApp {
+class AgeCalculatorApp {
   private state: AppState;
 
   // DOM Elements
@@ -108,7 +108,7 @@ class DateDistanceApp {
 
     try {
       this.hideError();
-      const result = calculateDateDistance(targetDate, fromDate || undefined);
+      const result = calculateAge(targetDate, fromDate || undefined);
 
       this.state.targetDate = targetDate;
       this.state.fromDate = fromDate;
@@ -140,7 +140,7 @@ class DateDistanceApp {
     }
   }
 
-  private updateUI(result: DateDistanceResult): void {
+  private updateUI(result: AgeResult): void {
     this.resultContainer.classList.remove('hidden');
 
     const humanReadable = document.getElementById('human-readable');
@@ -235,7 +235,7 @@ class DateDistanceApp {
 
   private async handleShare(): Promise<void> {
     const url = window.location.href;
-    const title = 'Date Distance Calculator Result';
+    const title = 'Age Calculator Result';
     let text = 'Check out this date calculation!';
     if (this.state.result) {
       text = this.state.result.humanReadable;
@@ -280,8 +280,8 @@ class DateDistanceApp {
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    new DateDistanceApp();
+    new AgeCalculatorApp();
   });
 } else {
-  new DateDistanceApp();
+  new AgeCalculatorApp();
 }

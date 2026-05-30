@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Calculate the precise time between any two dates with beautiful visualizations.">
 
-    <title>Distance Between Dates - Date Distance Calculator</title>
+    <title>Age Calculator — Calculate the time between any two dates</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
             </div>
             <div
                 class="text-sm sm:text-base md:text-lg font-black text-white tracking-wider sm:tracking-widest uppercase leading-tight">
-                DBD
+                Age Calculator
             </div>
         </a>
 
@@ -72,14 +72,14 @@
             <div
                 class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-mono tracking-widest uppercase mb-8 shadow-[0_0_15px_rgba(56,189,248,0.15)] animate-float-fast">
                 <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-                Date Distance Calculator v1.0
+                Age Calculator v1.0
             </div>
 
             <h1
                 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight uppercase relative inline-block animate-flicker">
-                Distance Between <br class="hidden md:block" />
+                Age <br class="hidden md:block" />
                 <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-400 to-sky-400 hover:animate-glitch cursor-crosshair">Dates</span>
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-400 to-sky-400 hover:animate-glitch cursor-crosshair">Calculator</span>
 
                 <!-- Corner brackets decoration -->
                 <div class="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-sky-500/30"></div>
