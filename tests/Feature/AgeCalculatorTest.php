@@ -2,17 +2,17 @@
 
 namespace Tests\Feature;
 
-use App\Services\DateDistanceService;
+use App\Services\AgeCalculatorService;
 use Tests\TestCase;
 
-class DateDistanceTest extends TestCase
+class AgeCalculatorTest extends TestCase
 {
-    private DateDistanceService $service;
-    
+    private AgeCalculatorService $service;
+
     protected function setUp(): void
     {
         parent::setUp();
-        $this->service = new DateDistanceService();
+        $this->service = new AgeCalculatorService();
 
         // Stub the @vite directive so HTTP tests don't require a built
         // asset manifest (npm run build) to render views.
@@ -116,7 +116,7 @@ class DateDistanceTest extends TestCase
         $response = $this->get('/app');
 
         $response->assertStatus(200);
-        $response->assertSee('Distance Between Dates');
+        $response->assertSee('Age Calculator');
         $response->assertSee('Target Date');
     }
 

@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\DateDistanceService;
+use App\Services\AgeCalculatorService;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
-class DateDistanceController extends Controller
+class AgeCalculatorController extends Controller
 {
     public function __construct(
-        private DateDistanceService $dateService
+        private AgeCalculatorService $dateService
     ) {
     }
 
@@ -28,7 +28,7 @@ class DateDistanceController extends Controller
             $result = $this->dateService->calculate($targetDate, $fromDate);
         }
 
-        return view('date-distance.index', [
+        return view('age-calculator.index', [
             'targetDate' => $targetDate,
             'fromDate' => $fromDate,
             'result' => $result,

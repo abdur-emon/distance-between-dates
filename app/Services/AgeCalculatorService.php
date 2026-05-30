@@ -6,17 +6,17 @@ use Carbon\Carbon;
 use Carbon\CarbonInterval;
 
 /**
- * DateDistanceService
- * 
- * Handles all date distance calculations with precision.
- * 
+ * AgeCalculatorService
+ *
+ * Handles all age and date-span calculations with precision.
+ *
  * Why Carbon?
  * - Laravel's native date library
  * - Handles timezones, DST, leap years automatically
  * - Immutable by default (prevents bugs)
  * - Rich API for date manipulation
  */
-class DateDistanceService
+class AgeCalculatorService
 {
     /**
      * Calculate the distance between two dates

@@ -1,6 +1,6 @@
-# Distance Between Dates - The Precise Date Distance Calculator
+# Age Calculator - Calculate the Time Between Any Two Dates
 
-![Distance Between Dates Hero](https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&q=80&w=1200&h=400)
+![Age Calculator Hero](https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&q=80&w=1200&h=400)
 
 A modern, production-grade Laravel application that calculates the precise time between any two dates with beautiful visualizations and high-fidelity cyber-aesthetics.
 
@@ -49,7 +49,7 @@ A modern, production-grade Laravel application that calculates the precise time 
 - ✅ **Simplicity**: No complex state management frameworks like Redux or Pinia for a utility app.
 
 #### 2. Service Layer Pattern
-Business logic is isolated in `app/Services/DateDistanceService.php`.
+Business logic is isolated in `app/Services/AgeCalculatorService.php`.
 **Why?**
 - **Testability**: Pure functions that are easy to isolate in unit tests.
 - **Reusability**: The same logic can be exposed via API controllers, Artisan commands, or scheduled jobs.
@@ -75,9 +75,9 @@ State is synchronized across Cookies, Local Storage, and URL Parameters.
 app/
 ├── Http/
 │   └── Controllers/
-│       └── DateDistanceController.php    # HTTP orchestration
+│       └── AgeCalculatorController.php    # HTTP orchestration
 └── Services/
-    └── DateDistanceService.php           # Business logic (Temporal math)
+    └── AgeCalculatorService.php           # Business logic (Temporal math)
 
 resources/
 ├── js/
@@ -85,7 +85,7 @@ resources/
 │   ├── types/
 │   │   └── index.ts                       # TypeScript interfaces
 │   └── utils/
-│       ├── dateDistance.ts                # Date calculation library
+│       ├── ageCalculator.ts               # Date calculation library
 │       └── state.ts                       # Parameter & storage management
 └── views/
     ├── layouts/
@@ -93,7 +93,7 @@ resources/
     ├── components/
     │   ├── date-input.blade.php           # Reusable terminal-style input
     │   └── result-display.blade.php       # Results grid UI
-    └── date-distance/
+    └── age-calculator/
         └── index.blade.php                # Main application view
 ```
 
